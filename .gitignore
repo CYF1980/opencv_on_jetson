@@ -1,0 +1,33 @@
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Model files (can be re-downloaded)
+models/face/*.caffemodel
+models/face/*.prototxt
+models/openpose/pose/coco/*.caffemodel
+models/openpose/pose/coco/*.prototxt
+models/openpose/pose/mpi/*.caffemodel
+models/openpose/pose/mpi/*.prototxt
+
+# Ignore everything in models except download scripts
+!models/**/download_model.sh
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# VSCode
+.vscode/
+
+# Logs / temp files
+*.log
+tmp/

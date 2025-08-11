@@ -1,0 +1,2 @@
+wget https://huggingface.co/camenduru/openpose/resolve/f4a22b0e6fa2a4a2b1e2d50bd589e8bb11ebea7c/pose_iter_160000.caffemodel
+wget https://raw.githubusercontent.com/opencv/opencv_extra/4.x/testdata/dnn/openpose_pose_mpi_faster_4_stages.prototxt -O pose_deploy_linevec_faster_4_stages.prototxt
