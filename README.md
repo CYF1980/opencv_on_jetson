@@ -15,8 +15,15 @@ pip install "protobuf<4" absl-py attrs "numpy<2"
 
 ### USB Camera
 python3 face_fps_cuda.py --width 640 --height 480 --fps 30
+
 python3 openpose_realtime_cuda.py --model_root ./models/openpose --dataset COCO --cam_w 640 --cam_h 480 --cam_fps 30
+
 python3 openpose_realtime_cuda.py --model_root ./models/openpose --dataset MPI --cam_w 640 --cam_h 480 --cam_fps 30
+
+python3 mediapipe_hand_gestures.py --cam_w 640 --cam_h 480 --cam_fps 30 --mirror
+python3 mediapipe_hand_gestures.py --cam_w 320 --cam_h 240 --cam_fps 30 --mirror
+python3 handpose_realtime_cuda.py --cam_w 640 --cam_h 480 --cam_fps 30
+python3 handpose_realtime_cuda.py --cam_w 320 --cam_h 240 --cam_fps 30
 
 
 ### CSI Camera

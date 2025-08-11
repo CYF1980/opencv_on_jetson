@@ -12,6 +12,7 @@ venv/
 # Model files (can be re-downloaded)
 models/face/*.caffemodel
 models/face/*.prototxt
+models/hands/*.onnx
 models/openpose/pose/coco/*.caffemodel
 models/openpose/pose/coco/*.prototxt
 models/openpose/pose/mpi/*.caffemodel
