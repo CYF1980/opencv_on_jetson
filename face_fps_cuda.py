@@ -62,7 +62,7 @@ def try_enable_cuda(net):
     if has_cuda:
         try:
             net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
-            net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+            net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA_FP16)
             print("[INFO] DNN backend=CUDA, target=CUDA")
             return True
         except Exception as e:
